@@ -36,7 +36,7 @@
         background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);
         background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); 
         }
-        #disp 
+        #disp , #dis
         {
         font-family: 'Teko', sans-serif;
         color: #333;
@@ -59,7 +59,7 @@
 	 h1,h2, .button,body {
 	  width: 100%;
 	}
-		  #disp{
+		  #disp,#dis{
 	  width: 80%;
 	}
 	.container {
@@ -75,54 +75,28 @@
         <br>
        <h2 style="color:black"> <label for="radio">Happy with 2021!?</label></h2> 
        <br>
+		<a href = "newyr.jpg" download = "NewYear.jpg"></a>
        <h2>YES :)</h2><button class="button" onclick="validatef()">Click Me!</button>
        <br>
        <h2>No :(</h2><button class="button"  onclick="validatef1()">Click Me!</button>
        <br>
        <br>
        <div id="disp"></div>
-        
+        <br>
+        <div id="dis"></div>
         </center>
-        <a href = "newyr.jpg" download = "NewYear.jpg" id = "download"></a>
-        <canvas></canvas>
+       
+        
     </body>
     <script>
         function validatef(){
           document.getElementById("disp").innerHTML="Praying that you have a truly remarkable and blissful year ahead! Happy new year to you and your family Im blessed to know that I have friends like you in my life this New Year. Here s to many years to come!";
-          setTimeout(function()
-          {
-            downloadCanvas();}, 100);
-          function downloadImage(){
-            document.getElementById('download').click();
-}
-
-
-function downloadCanvas(){
-  var a = document.getElementById('download');
-  var b = a.href;
-  a.href = document.getElementsByTagName('canvas')[0].toDataURL();
-  downloadImage();
-  a.href = b;
-}
+           document.getElementById("dis").innerHTML="<img src='newyr.jpg' width='100%' height='100%'>"
         }
 function validatef1(){
       
     document.getElementById("disp").innerHTML="May all sorrows get locked, and you get showered with the best of the best blessings Enjoy this special time of year with those you love, and may the Lord bless you all with a happy and healthy New Year";
-    setTimeout(function()
-          {
-            downloadCanvas();}, 100);
-          function downloadImage(){
-            document.getElementById('download').click();
-}
-
-
-function downloadCanvas(){
-  var a = document.getElementById('download');
-  var b = a.href;
-  a.href = document.getElementsByTagName('canvas')[0].toDataURL();
-  downloadImage();
-  a.href = b;
-}
+    document.getElementById("dis").innerHTML="<img src='newyr.jpg' width='100%' height='100%'>"
 }
 
     </script>
