@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <title>Happy New Year</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap" rel="stylesheet">
+    <style>
+        .button 
+        {
+        min-width: 90px;
+        height: 30px;
+        color: #fff;
+        padding: 5px 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        border-radius: 5px;
+        border: none;
+        background-size: 120% auto;
+        background-image: linear-gradient(315deg, #000428 0%, #004e92 75%);
+        }
+        .button:hover
+         {
+         background-position: right center;
+        }
+        .button:active
+         {
+         top: 2px;
+        }
+        body
+        {  
+        background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);
+        background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); 
+        }
+        #disp 
+        {
+        font-family: 'Teko', sans-serif;
+        color: #333;
+        font-size: 1.2rem;
+	    margin: 0 auto;
+        padding: 1.5rem 2rem;
+        border-radius: 0.2rem;
+        background-color: rgb(255, 255, 255);
+        border: none;
+        width: 50%;
+        height: 25%;;
+        display: block;
+        border-bottom: 0.3rem solid transparent;
+        transition: all 0.3s;
+        }
+        h1 { font-family: Papyrus, fantasy; font-size: 34px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; }
+        h2 { font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; }
+        </style>
+    </head>
+    <body>
+        <br>
+        <center><h1 style="color:navy;">Happyyyy 2022</h1>
+        <br>
+       <h2 style="color:black"> <label for="radio">Happy with 2021!?</label></h2> 
+       <br>
+       <h2>YES :)</h2><button class="button" onclick="validatef()">Click Me!</button>
+       <br>
+       <h2>No :(</h2><button class="button"  onclick="validatef1()">Click Me!</button>
+       <br>
+       <br>
+       <div id="disp"></div>
+        
+        </center>
+        <a href = "newyr.jpg" download = "NewYear.jpg" id = "download"></a>
+        <canvas></canvas>
+    </body>
+    <script>
+        function validatef(){
+          document.getElementById("disp").innerHTML="Praying that you have a truly remarkable and blissful year ahead! Happy new year to you and your family Im blessed to know that I have friends like you in my life this New Year. Here s to many years to come!";
+          setTimeout(function()
+          {
+            downloadCanvas();}, 100);
+          function downloadImage(){
+            document.getElementById('download').click();
+}
+
+
+function downloadCanvas(){
+  var a = document.getElementById('download');
+  var b = a.href;
+  a.href = document.getElementsByTagName('canvas')[0].toDataURL();
+  downloadImage();
+  a.href = b;
+}
+        }
+function validatef1(){
+      
+    document.getElementById("disp").innerHTML="May all sorrows get locked, and you get showered with the best of the best blessings Enjoy this special time of year with those you love, and may the Lord bless you all with a happy and healthy New Year";
+    setTimeout(function()
+          {
+            downloadCanvas();}, 100);
+          function downloadImage(){
+            document.getElementById('download').click();
+}
+
+
+function downloadCanvas(){
+  var a = document.getElementById('download');
+  var b = a.href;
+  a.href = document.getElementsByTagName('canvas')[0].toDataURL();
+  downloadImage();
+  a.href = b;
+}
+}
+
+    </script>
+</html>
